@@ -1,0 +1,208 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- build:css css/main.css -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css"
+      integrity="sha512-Rcr1oG0XvqZI1yv1HIg9LgZVDEhf2AHjv+9AuD1JXWGLzlkoKDVvE925qySLcEywpMAYA/rkg296MkvqBF07Yw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>DIGITAL ENIGMA - Contact</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav-bar">
+          <div class="nav-bar-logo">
+            <a href="/">
+              <img src="./images/Logo-Transparent.png" alt="" />
+            </a>
+          </div>
+
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+
+          <ul class="nav-menu">
+            <li><a href="/" class="nav-links">Home</a></li>
+            <li><a href="artists.html" class="nav-links">Artists</a></li>
+            <li><a href="about.html" class="nav-links">About</a></li>
+            <li><a href="/contact.html" class="nav-links">Contact</a></li>
+            <li>
+              <a href="signup.html" class="nav-links nav-links-btn">Sign Up</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center mb-5">
+            <h1 class="heading-section pt-5"><b>CONTACT</b></h1>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="wrapper">
+              <div class="row no-gutters">
+                <div class="col-lg-6">
+                  <div class="contact-wrap w-100 p-md-5 p-4 contact-form">
+                    <h3 class="display-4">Contact Us</h3>
+                    <p class="mb-4">
+                      We're open for any suggestion or just to have a chat
+                    </p>
+                    <!-- <div id="form-message-warning" class="mb-4"></div>
+                    <div id="form-message-success" class="mb-4">
+                      Your message was sent, thank you!
+                    </div> -->
+                    <div class="row mb-4">
+                      <div class="col-md-4">
+                        <div class="dbox w-100 d-flex align-items-start">
+                          <div class="text">
+                            <p>
+                              <span>Address:</span> 198 West 21th Street, Suite
+                              721 New York NY 10016
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="dbox w-100 d-flex align-items-start">
+                          <div class="text">
+                            <p>
+                              <span>Email:</span>
+                              <a href="mailto:info@yoursite.com"
+                                >info@yoursite.com</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="dbox w-100 d-flex align-items-start">
+                          <div class="text">
+                            <p>
+                              <span>Phone:</span>
+                              <a href="tel://1234567920">+ 1235 2355 98</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <form
+                      method="POST"
+                      id="contactForm"
+                      name="contactForm"
+                      class="contactForm"
+                      novalidate="novalidate"
+                    >
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="name"
+                              id="name"
+                              placeholder="Name"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input
+                              type="email"
+                              class="form-control"
+                              name="email"
+                              id="email"
+                              placeholder="Email"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="subject"
+                              id="subject"
+                              placeholder="Subject"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <textarea
+                              name="message"
+                              class="form-control"
+                              id="message"
+                              cols="30"
+                              rows="4"
+                              placeholder="Create a message here"
+                            ></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input
+                              type="submit"
+                              value="Send Message"
+                              class="btn btn-send"
+                            />
+                            <div class="submitting"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="w-100 social-media mt-3">
+                      <h3>Follow us here</h3>
+                      <p>
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Dribbble</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 w-100 contact-gif-section"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>Copyright © 2021 Ado Andrew</p>
+      </footer>
+    </section>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

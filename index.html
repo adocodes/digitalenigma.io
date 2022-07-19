@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!-- build:css css/main.css -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css"
+      integrity="sha512-Rcr1oG0XvqZI1yv1HIg9LgZVDEhf2AHjv+9AuD1JXWGLzlkoKDVvE925qySLcEywpMAYA/rkg296MkvqBF07Yw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Digital Enigma</title>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header class="header">
+      <div class="container">
+        <nav class="nav-bar navbar">
+          <div class="nav-bar-logo">
+            <a href="/">
+              <img src="./images/Logo-Transparent.png" alt="" />
+            </a>
+          </div>
+
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+
+          <ul class="nav-menu">
+            <li><a href="/" class="nav-links">Home</a></li>
+            <li><a href="artists.html" class="nav-links">Artists</a></li>
+            <li><a href="about.html" class="nav-links">About</a></li>
+            <li><a href="contact.html" class="nav-links">Contact</a></li>
+            <li>
+              <a href="signup.html" class="nav-links nav-links-btn">Sign Up</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="modal" tabindex="-1" role="dialog" data-toggle="#idOfModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">SIGN</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form action="" method="get" class="form-example">
+                <div class="form-example">
+                  <label for="name">Enter your name: </label>
+                  <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form-example">
+                  <label for="email">Enter your email: </label>
+                  <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-example">
+                  <input type="submit" value="Subscribe!">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="#idOfModal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </header>
+
+    <!-- Slider -->
+    <section class="home" id="home">
+      <div class="swiper-container home-slider">
+        <div class="swiper-wrapper wrapper">
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="./images/manzelbowman.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="./images/slider-1.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="./images/slider-2.gif" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <footer class="footer">
+        <p>Copyright © 2021 Ado Andrew</p>
+      </footer>
+    </section>
+
+    <!-- Swiper.js Script -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
