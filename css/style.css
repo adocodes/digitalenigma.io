@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.35;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+  width: 100%;
+  background-color: #f7f5f5;
+  border-bottom: 1.5px solid #eee;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.nav-bar-logo a img {
+  width: 25rem;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 1.5rem;
+}
+
+.nav-menu li:not(:last-child) {
+  margin-right: 2.5rem;
+}
+
+.nav-menu li .nav-links {
+  color: #222;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  width: 100%;
+  transition: all 300ms ease-out;
+}
+
+.nav-menu li .nav-links:hover {
+  color: #ecba27;
+}
+
+.nav-menu li .nav-links-btn {
+  background-color: #ecba27;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #ecba27;
+  transition: all 300ms ease-out;
+  color: #fff;
+}
+
+.nav-menu li .nav-links-btn:hover {
+  background-color: transparent;
+  color: #ecba27;
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #ecba27;
+}
+
+/* Hamburger-Menu */
+
+.menu-toggle .bar {
+  width: 2.5rem;
+  height: 0.2rem;
+  margin: 0.5rem auto;
+  transition: all 300ms ease-in-out;
+  background-color: #222;
+}
+
+/* Slider */
+
+.home {
+  position: relative;
+}
+
+.home .home-slider .slide .image img {
+  width: 100%;
+  height: 70rem;
+}
+
+.footer {
+  background-color: #f7f5f5;
+  padding: 1.5rem;
+  border-top: 1.5px solid #eee;
+  margin-top: 5rem;
+}
+
+.footer p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Contact-Page */
+
+.contact-form {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 0.8rem;
+}
+
+.contact-gif-section {
+  background-image: url('../images/helenaaleimeida.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 0.8rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.ftco-section form .form-control {
+  padding: 0.8rem 1.2rem;
+  border: 1.5px solid #ced4da;
+  font-size: 1.6rem;
+}
+
+.btn-btn-secondary {
+  background-color: #ecba27;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #ecba27;
+  transition: all 300ms ease-out;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+/* Artists Page */
+
+.artists-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.artists-card {
+  width: 40rem;
+  margin-top: 2.5rem;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.card-text {
+  font-size: 1.6rem;
+}
+
+/* About-Page */
+.about .about-content {
+  width: 80rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 0.8rem;
+  padding: 3.5rem;
+  margin: 3.5rem auto;
+}
+
+.about .about-content .about-img {
+  margin-top: 2.5rem;
+}
+
+.about .about-content .about-img img {
+  width: 100%;
+}
+
+/* Media Queries */
+
+@media (max-height: 600px) {
+  .home .home-slider .slide .image img {
+    width: 100%;
+    height: 50rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .contact-gif-section {
+    height: 600px;
+  }
+}
+
+@media (max-width: 835px) {
+  .artists-card {
+    width: 35rem;
+    margin-top: 2.5rem;
+  }
+
+  .about .about-content {
+    width: 85%;
+    border-radius: 0.8rem;
+    padding: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    position: relative;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 12rem;
+    left: -100%;
+    opacity: 0;
+    z-index: 12;
+    transition: left 500ms ease;
+    padding: 1.5rem 0rem;
+    border-bottom: 1.5px solid #eee;
+  }
+
+  .nav-menu.active {
+    background-color: #fff;
+    left: 0;
+    opacity: 1;
+    transition: all 500ms ease;
+  }
+
+  .nav-menu li:not(:last-child) {
+    margin-right: 0rem;
+  }
+
+  .nav-menu li .nav-links {
+    text-align: left;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .nav-menu li .nav-links:hover {
+    color: #ecba27;
+  }
+
+  .nav-menu li .nav-links-btn {
+    border: none;
+    padding: 0;
+    background: #ecba27;
+    color: #fff;
+    padding: 0.8rem 0rem;
+    transition: all 300ms ease-out;
+    display: block;
+    width: 10rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .menu-toggle .bar {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-toggle:hover {
+    cursor: pointer;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(6.5px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-7.5px) rotate(-45deg);
+  }
+
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: 5px;
+    left: auto;
+  }
+
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: 5px;
+    right: auto;
+  }
+
+  .nav-bar-logo a img {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 740px) {
+  .artists-card {
+    width: 32rem;
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 675px) {
+  .artists-card {
+    width: 40rem;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .home .home-slider .slide .image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .about .about-content {
+    width: 100%;
+    border-radius: 0.8rem;
+    padding: 2.5rem;
+  }
+}
+
+
+.bg-image {
+  /* The image used */
+  background-image: url("IMG-5743.JPG");
+
+  /* Full height */
+  height: 9%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-box{
+  width: 700px;
+  margin-top: 50px;
+  height: 620px;
+  background: rgba(0,0,0,0.4) ;
+  color: white;
+  top: 50%;
+  left: 25%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+.login-box p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.login-box input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="password"]
+{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+.login-box input[type="submit"]
+{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #1c8adb;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.login-box input[type="submit"]:hover
+{
+  cursor: pointer;
+  background: #39dc79;
+  color: #000;
+}
+
+.login-box a{
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+}
+.login-box a:hover
+{
+  color: #39dc79;
+}
